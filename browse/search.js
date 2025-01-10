@@ -7,8 +7,8 @@ const loaderContainer = document.getElementById("loader")
 let allModelsLoaded = false;
 
 const modelCardHtml = `
-<a href="/repo/repo.html" class="card mini-card rand-rotate1" style="height: 200px;" href="#">
-  <img style="height:80px;" src="/assets/atom.png">
+<a href="../repo/repo.html" class="card mini-card rand-rotate1" style="height: 200px;" href="#">
+  <img style="height:80px;" src="../assets/atom.png">
   <p>
     Model
   </p>
@@ -16,8 +16,8 @@ const modelCardHtml = `
 `
 
 const userCardHtml = `
-<a href="/user/user.html" class="card mini-card rand-rotate1" style="height: 200px;" href="#">
-  <img style="height:80px;" src="/assets/eye.png">
+<a href="../user/user.html" class="card mini-card rand-rotate1" style="height: 200px;" href="#">
+  <img style="height:80px;" src="../assets/eye.png">
   <p>
     User
   </p>
