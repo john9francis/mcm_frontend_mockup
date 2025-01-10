@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "navbar navbar"
+  "sidebar main"
+  "sidebar footer";
+}
+
+nav{
+  top: 0;
+  position: sticky;
+  grid-area: navbar;
+}
+
+.search {
+  grid-area: search;
+  position: sticky;
+}
+
+aside{
+  position: sticky;
+  align-self: start;
+  grid-area: sidebar;
+  background-color:var(--darker-blue);
+}
+
+main{
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+  background-color:var(--black);
+}
+.cancelButton{
+  display:none;
+}
+
+@media(max-width: 800px){
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "navbar"
+    "main"
+    "footer"
+  }
+  aside{
+    position: fixed;
+    width: 300px;
+    display: none;
+  }
+  .cancelButton{
+    display: block;
+  }
+  .show{
+    display: block;
+  }
+}
+
+button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px; padding-bottom: 2px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color:var(--blue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--dark-blue);
+}
+
+.menu {
+  padding-left: 3.5em;
+  padding-top: 1em;
+  list-style-type: lower-greek;
+}
+
+/* This is so the navbar doesn't cover the section headers: */
+#overview, #readme {
+  padding-top: 80px;
+  margin-top: -50px;
+}

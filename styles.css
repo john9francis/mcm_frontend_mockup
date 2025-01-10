@@ -1,0 +1,124 @@
+:root {
+  --black: rgb(0, 0, 0);
+  --dark-grey: rgb(26, 26, 26);
+  --blue: rgb(55, 77, 117);
+  --dark-blue: rgb(39, 56, 87);
+  --darker-blue:rgb(27, 39, 62);
+  --red: rgb(190, 61, 61);
+  --grey: rgb(81, 90, 96);
+  --off-white: rgb(170, 204, 255);
+  --white: rgb(255, 255, 255);
+
+  --sherpa-blue: #1d4853;
+  --lemon: #abde00;
+  --bleach-white: #fbf1d1;
+}
+
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-grey);
+  color: var(--off-white);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 75px;
+  text-align: center;
+  padding: min(2em, 4%);
+}
+
+section {
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  min-width: 100vw;
+  padding: 20px;
+}
+
+/* Card Container */
+.card {
+  width: 200px;
+  height: 200px;
+  color: var(--off-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2em;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 4px solid var(--blue);
+  transition: transform 0.3s ease; 
+}
+
+.mini-card {
+  width: 150px;
+  height: 150px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 10px var(--blue);
+}
+
+.rand-rotate1:hover {
+  transform: rotateZ(3deg);
+}
+.rand-rotate2:hover {
+  transform: rotateZ(5deg);
+}
+.rand-rotate3:hover {
+  transform: rotateZ(-7deg);
+}
+.rand-rotate4:hover {
+  transform: rotateZ(-2deg);
+}
+
+
+a {
+  color: var(--off-white);
+}
+
+a.card {
+  text-decoration: none;
+}
+
+nav {
+  background-color:var(--black);
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px; padding-bottom: 2px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color:var(--blue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+button:hover {
+  background-color: var(--dark-blue);
+}

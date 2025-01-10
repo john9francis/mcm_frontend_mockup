@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/browse/loader.css">
+  <link rel="stylesheet" href="/browse/search.css">
+  <title>Browsing Monte Carlo Models</title>
+</head>
+<body>
+  <nav>
+    <a href="/" style="text-decoration: none;">
+      <h2 style="margin: 0;">Monte Carlo Modeler</h2>
+    </a>
+    <div style="
+      display: flex;
+      gap: 1.5em;
+      align-items: center;">
+      <a href="#" style="text-decoration: none;">Login</a>
+      <a href="#" style="text-decoration: none;">Pricing</a>
+    </div>
+  </nav>
+  <h1 style="font-size: 50px;">Monte Carlo Models</h1>
+  <p style="align-self: center;" id="queryDetails">Searching: all models</p>
+  <div class="search-container">
+    <input type="text" class="search-bar" placeholder="Search...">
+    <button class="search-button">Search</button>
+  </div>
+  
+  <div id="all_models" class="all-models"></div>
+  <div id="loader" style="display: flex; justify-content: center;"></div>
+
+<script src="/browse/search.js"></script>
+</body>
+</html>
